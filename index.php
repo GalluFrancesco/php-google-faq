@@ -114,3 +114,10 @@
       ],
     ],
   ];
+
+  foreach($faqDB as $faq => $answer) {
+    echo '<'. $answer['title'] .'>' .$faq . '</'. $answer['title'] .'>';
+    foreach($answer['paragraphs'] as $paragraph => $value) {
+      echo '<p>' . $value . '</p>';
+    }
+  }
